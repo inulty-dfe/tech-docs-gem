@@ -1,3 +1,9 @@
+## Unreleased
+
+### New features
+
+- [Support using Google Tag Manager for Google Analytics 4](https://github.com/alphagov/tech-docs-gem/pull/436)
+
 ## 5.1.1
 
 ### Fixes
