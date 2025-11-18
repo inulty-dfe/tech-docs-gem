@@ -1,7 +1,8 @@
 <!doctype html>
 <html lang="en" class="govuk-template <%= config[:tech_docs][:show_govuk_logo] ? 'govuk-template--rebranded ' : '' %>no-js">
   <head>
-    <%= partial 'layouts/analytics_head' %>
+    <%= partial 'layouts/analytics_ga4_gtag' %>
+    <%= partial 'layouts/analytics_ga4_gtm' %>
 
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta charset="utf-8">
@@ -51,6 +52,7 @@
     <script>document.body.className += ' js-enabled' + ('noModule' in HTMLScriptElement.prototype ? ' govuk-frontend-supported' : '');</script>
 
     <div class="app-pane">
+      <%= partial 'layouts/cookie_banner' %>
       <div class="app-pane__header toc-open-disabled">
         <a href="#content" class="govuk-skip-link" data-module="govuk-skip-link">Skip to main content</a>
 
